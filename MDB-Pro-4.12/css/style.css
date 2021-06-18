@@ -1,12 +1,20 @@
 h2{
-    color:#3662ad;
+    color:#069c77;
 }
 p{
-    color:#2d5fb6;
+    color:#069c77;
 }
 h4{
-    color:#3662ad;
+    color:#069c77;
 }
 .card .card-body .card-text{
-    color:#2d5fb6;
+    color:#069c77;
+}
+body{
+    
+    background: rgba(247, 202, 201, 0.6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(247, 202, 201, 0.6), rgba(145, 168, 208, 0.6));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(247, 202, 201, 0.658), rgba(145, 168, 208, 0.6));
 }
