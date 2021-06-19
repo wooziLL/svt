@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021-06-18</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1><a id="Web_0"></a>《Web应用基础》课程结业报告</h1>
+<p></p><div class="toc"><h3> </h3><ul><li><a href="#Web_0">《Web应用基础》课程结业报告</a></li><ul><li><a href="#_3">一、网站内容</a></li><li><a href="#_14">二、开发过程</a></li><ul><li><a href="#1_15">1、选题</a></li><li><a href="#2_18">2、具体实现</a></li></ul><li><a href="#_22">三、遇到的问题</a></li><li><a href="#_44">四、总结</a></li></ul></ul></div><p></p>
+<h2><a id="_3"></a>一、网站内容</h2>
+<p>我做的是一个静态网站，内容是我喜欢的一个韩国男子组合的介绍，算是一种安利，希望他们能被更多人看到。一共写了六个页面：简介、图片、成员介绍、vocal team、hip-pop team、performance team，每个页面的背景都以SEVENTEEN的应援色渐变而来。下面对每个页面进行介绍：</p>
+<ul>
+<li><strong>简介</strong>：这是整个网站的首页，有SEVENTEEN的总体简介，部分音乐代表作品。</li>
+<li><strong>图片</strong>：里面是一些我喜欢的SEVENTEEN的图片。</li>
+<li><strong>成员介绍</strong>：每个成员的单独介绍。</li>
+<li><strong>vocal team</strong>：以声乐为主的小分队——主唱队的介绍以及该分队的音乐。</li>
+<li><strong>hip-pop team</strong>：以说唱为主的小分队——说唱队的介绍以及该分队的音乐。</li>
+<li><strong>performance team</strong>：以舞蹈表演为主的小分队——表演队（舞蹈队）的介绍以及该分队的音乐。</li>
+</ul>
+<h2><a id="_14"></a>二、开发过程</h2>
+<h3><a id="1_15"></a>1、选题</h3>
+<p>自从老师布置了期末大作业以来，我就一直在纠结要制作一个怎样的网页，百思不得其解之际，想到了我最爱的SEVENTEEN，于是我就写了这个网页，为自己喜欢的人写网页会让自己有动力，看到网页一点点展现在我面前时会有一种有人而升的成就感和喜悦感。</p>
+<h3><a id="2_18"></a>2、具体实现</h3>
+<p>在确定好选题后我的心中已经有了这个网站的大致框架：要有一个首页作总体简介，一个页面放多张图片，一个界面放成员的单独介绍，三个界面分别介绍三个小分队——vocal team、hip-pop team、performance team。</p>
+<p>整个网页套用了MDB的模板，放上自己的内容，在部分地方加以修改，使整个网站简洁而美观，且有代表SEVENTEEN的特色。由于只是用于展示的网页，没有什么特别复杂的内容，整个网页的设计比较简单，没有遇到太多的问题。</p>
+<h2><a id="_22"></a>三、遇到的问题</h2>
+<p>1.在制作总队和小分队的介绍时，想加入几首代表音乐，让用户能够直接在该页面播放，对他们的音乐有一个粗略的了解，不用到音乐软件上搜索。虽然有&lt;audio&gt;这个标签用来制作音乐播放的相关内容，但因为之前没有使用过，对它不熟悉，上网百度后，错误地使用了它，导致网页完全没有反应，后来采用了&lt;vedio&gt;标签，设置了<code>video width="100px" height="30px" controls</code>，这样便可以播放音乐，但其在部分浏览器会出现图标显示不完整的情况：</p>
+<blockquote>
+<p>QQ浏览器：<br>
+<img src="https://img-blog.csdnimg.cn/2021061911253388.png" alt="在这里插入图片描述">火狐浏览器：<br>
+<img src="https://img-blog.csdnimg.cn/20210619112558682.png" alt="在这里插入图片描述"></p>
+</blockquote>
+<p>但如果将<code>height</code>改为60，<code>width</code>改为300，在QQ浏览器能显示完全了，却又会导致相隔两行的间距过大而不美观。后来在查看老师的教程网站时，在HTML5那一个板块找到了audio的正确使用方法，虽然相隔的间距还是有点儿大，但比之前好多了。</p>
+<p>2.在进行图片这一界面的制作时，我采用的是每放一张图片就要一个网址，这导致，在运行网页时，每一张图片都要从它的网址里跳转，使得加载过慢，且图片的大小不一，排版不好看。<br>
+图片加载中：<br>
+<img src="https://img-blog.csdnimg.cn/20210619172042321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjEyOTUwNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>加载完毕：<br>
+<img src="https://img-blog.csdnimg.cn/20210619170851179.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjEyOTUwNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+这个问题我到最后也没有解决。</p>
+<p>3.作业要求我们把网站部署到github上去，使得所有人都能通过网址查看到我的网页设计，但我最初连github的官网都进不去，后来在室友的帮助下，找到了访问github的方法，建立仓库又是一个问题，通过百度、CSDN等网站网友的分享找到了建库的方法，并上传了自己的项目文件，但其中的视频由于过大，上传不了，在本地运行时，本来该有如下界面：<br>
+<img src="https://img-blog.csdnimg.cn/20210619172504157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjEyOTUwNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+由于视频上传失败，就取消了这一板块，在网页最末尾加入了一个B站视频的超链接，通过网页跳转，到B站可以看到更多的视频，此外还添加了其余三个超链接，使访问者可以有更多途径去了解SEVENTEEN。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210619172716501.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjEyOTUwNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2><a id="_44"></a>四、总结</h2>
+<p>&nbsp;&nbsp;在做本次网页开发时，为了节约时间，选择套用了老师提供的MDB模板，没有写JS和TS的代码，做的是一个相对简单的界面，但还是有不小的收获。<br>
+&nbsp;&nbsp;对于HTML和CSS的使用有了更深入的了解，会使用的HTML标签更多了，也能用CSS让界面看上去更好看，能够用HTML和CSS做一个简单的页面开发。We吧b课程并布局下雨HTML和CSS，还包括JS、TS、Angular框架的使用，在配置好JS和TS的相关环境后，通过查找资料，也能够写一些简单的程序，但Angular在配置时就出现了很大的问题，这也是我最后没有选择做动态网站的理由之一。<br>
+&nbsp;&nbsp;虽然在制作网页时遇到了很多问题，部分解决了，部分未解决，但最后做出的界面效果我还是比较满意，基本完成了我最初的构想。我也在网站上看到了很多别人做的精美的网页设计，意识到我与他们的差距，希望以后还能更深入的学习，做出更好的网页设计。<br>
+&nbsp;&nbsp;以上就是我的所有总结。</p>
+</div>
+</body>
+
+</html>
